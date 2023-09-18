@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header/>
-        {children}
+        <div className='px-10'>
+          {children}
+        </div>
       </body>
     </html>
   )
