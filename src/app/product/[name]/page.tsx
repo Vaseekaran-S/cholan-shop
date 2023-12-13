@@ -34,18 +34,7 @@ function page({ params }: any) {
       count: 0
     }
   });
-  const [similarProduct, setSimilarProduct] = useState([{
-    id: 0,
-    title: "",
-    price: 0,
-    description: "",
-    category: "",
-    image: "",
-    rating: {
-      rate: 0,
-      count: 0
-    }
-  }]);
+  const [similarProduct, setSimilarProduct] = useState<[Product]>([product]);
 
 
   const getProduct = async () => {

@@ -11,7 +11,7 @@ function ProductSectionSkeliton() {
             <div className='h-auto flex gap-5 p-3 overflow-x-auto overflow-y-hidden'>
                 {products.map((e, i) => {
                     return (
-                        <ProductCardSkeliton />
+                        <ProductCardSkeliton key={i}/>
                     )
                 })}
             </div>

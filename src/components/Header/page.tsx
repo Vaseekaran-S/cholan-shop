@@ -52,8 +52,8 @@ function Header() {
                 <ul className='hidden sm:flex '>
                     {data.map((e,i) => {
                         return (
-                            <li className='p-3 text-white'>
-                                <Link href={e.url} key={i} >{e.name}</Link>
+                            <li className='p-3 text-white' key={i}>
+                                <Link href={e.url} >{e.name}</Link>
                             </li>
                         );
                     })}
