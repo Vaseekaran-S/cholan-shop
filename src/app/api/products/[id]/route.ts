@@ -14,7 +14,6 @@ export async function GET(req: Request,res: Response) {
         data2 = data2.filter((element:any)=> {
             return element.id != id
         });
-        console.log(data2);
         
         return NextResponse.json({ data : data, similar : data2 })
 
