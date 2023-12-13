@@ -19,7 +19,7 @@ type Product = {
   }
 }
 
-function page({ params }: any) {
+function Page({ params }: any) {
 
   const [loading, setLoading] = useState(true)
   const [product, setProduct] = useState<Product>({
@@ -97,4 +97,4 @@ function page({ params }: any) {
   )
 }
 
-export default page
+export default Page
