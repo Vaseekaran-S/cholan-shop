@@ -1,5 +1,4 @@
 
-import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
@@ -10,8 +9,8 @@ function ProductCard({data}:any) {
 
   return (
     <div className='bg-white p-3 rounded'>
-      <h1 className='font-bold text-xl w-[250px] truncate'>{title}</h1>
-      <div className='group w-[300px] h-[250px] relative cursor-pointer'>
+      <h1 className='font-bold text-xl w-[230px] truncate'>{title}</h1>
+      <div className='group w-[230px] h-[200px] relative cursor-pointer'>
         <img src={image} loading='lazy' alt='Imge' className='w-full h-full object-scale-down p-4 group-hover:opacity-75 transform transition duration-500 group-hover:scale-110'/>
         <div className='hidden w-full h-full absolute top-0 items-center justify-center group-hover:flex'>
           <Link href={`/product/${id}`}>

@@ -2,8 +2,8 @@
 "use client"
 
 import ProductCardSkeliton from '@/components/Cards/product/loading';
-import ProductCard from '@/components/Cards/product/page'
 import ServiceCard from '@/components/Cards/service/page'
+import ProductSectionSkeliton from '@/components/Section/products/loading';
 import ProductSection from '@/components/Section/products/page';
 import Image from 'next/image'
 import { useEffect, useState } from 'react';
@@ -21,7 +21,7 @@ type Product = [{
   }
 }]
 
-function page() {
+function Page() {
 
   const data = [
     {
@@ -103,13 +103,14 @@ function page() {
           <h1 className='text-center pb-10 text-3xl font-bold'>Our Products</h1>
         </div>
         {loading ? (
-          <div className='bg-black mb-10 h-auto rounded-md flex gap-5 p-5 overflow-x-auto overflow-y-hidden'>
-            {data.map((e) => {
-              return (
-                <ProductCardSkeliton />
-              )
-            })}
-          </div>
+          <ProductSectionSkeliton />
+          // <div className='bg-black mb-10 h-auto rounded-md flex gap-5 p-5 overflow-x-auto overflow-y-hidden'>
+          //   {data.map((e,i) => {
+          //     return (
+          //       <ProductCardSkeliton key={i}/>
+          //     )
+          //   })}
+          // </div>
         ) : (
           <div>
 
@@ -127,4 +128,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

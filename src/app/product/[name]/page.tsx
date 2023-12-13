@@ -3,6 +3,8 @@
 
 import React, { useEffect, useState } from 'react'
 import ProductSkeliton from './loading'
+import ProductSection from '@/components/Section/products/page'
+import ProductSectionSkeliton from '@/components/Section/products/loading'
 
 type Product = {
   id: number,
@@ -32,28 +34,45 @@ function page({ params }: any) {
       count: 0
     }
   });
+  const [similarProduct, setSimilarProduct] = useState([{
+    id: 0,
+    title: "",
+    price: 0,
+    description: "",
+    category: "",
+    image: "",
+    rating: {
+      rate: 0,
+      count: 0
+    }
+  }]);
 
 
   const getProduct = async () => {
     const responce = (await fetch(`/api/products/${params.name}`))
-    const data = (await responce.json()).data
+    const data = (await responce.json())
     if(data){
-      setProduct(data)
+      setProduct(data.data)
+      setSimilarProduct(data.similar)
       setLoading(false)
     }
   }
 
   useEffect(() => {
     getProduct()
-  })
+  },[])
 
   return (
     <div>
 
       {loading ? (
-        <ProductSkeliton/>
+        <div>
+          <ProductSkeliton/>
+          <ProductSectionSkeliton />
+        </div>
       ) : (
 
+        <div>
         <div className='mt-20 mb-20'>
           <h2 className='text-3xl text-center font-bold mb-20'>{product.title}</h2>
           <div className='lg:px-20 w-full grid grid-cols-12 gap-10'>
@@ -80,6 +99,8 @@ function page({ params }: any) {
               <button className='bg-green-700 p-2 rounded-sm text-white text-sm ml-5'>Buy Now</button>
             </div>
           </div>
+        </div>
+        <ProductSection products={similarProduct} category={product.category} />
         </div>
       )}
 

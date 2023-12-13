@@ -53,7 +53,7 @@ function Header() {
                     {data.map((e,i) => {
                         return (
                             <li className='p-3 text-white'>
-                                <Link href={e.url} key={i}>{e.name}</Link>
+                                <Link href={e.url} key={i} >{e.name}</Link>
                             </li>
                         );
                     })}
