@@ -1,14 +1,21 @@
 # Welcome to Cholan Shop
 
-Cholan Shop is an ongoing E-commerce web applications which is build using Next.Js, Typescript and MongoDb. It aim to provides a good user-friendly experience for customers.
-It also has online oreder systems in wich you tracck your order.
+Cholan Shop is an ongoing e-commerce web application built using Next.js, TypeScript, and MongoDB. It aims to provide a good user-friendly experience for customers. It also features an online ordering system where you can track your orders
+
+## Teck Stack
+
+- ![Next.js](https://img.shields.io/badge/-Next.js-333333?style=flat&logo=next.js)
+- ![Typescript](https://img.shields.io/badge/-Typescript-333333?style=flat&logo=typescript)
+- ![MongoDb](https://img.shields.io/badge/-MongoDb-333333?style=flat&logo=mongodb)
 
 ## Features
 
-- **Responsive Design:** Enjoy a consistent experience across various devices, thanks to the responsive design implemented using Next.js.
-
-- **TypeScript:** Benefit from enhanced code quality and developer productivity with the use of TypeScript.
-
-- **MongoDB Integration:** Utilize the power of MongoDB for efficient and scalable data storage.
-
-- **Online Ordering System:** Experience the convenience of our online ordering system, complete with order tracking functionality.
+- User Dashboard
+- Amazing User Experience
+- Seamless Products 
+- Filtering Options  
+- Cart Products 
+- Recommended Products 
+- Online Order System  
+- Online Tracking Order  
+- Order History 
