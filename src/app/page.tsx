@@ -85,11 +85,11 @@ function Page() {
         <Image src='/images/banner.png' alt='banner image' height={500} width={500} />
       </div>
 
-      <div className='h-[100vh] mb-10'>
+      <div className='min-h-[100vh] mb-10'>
         <div>
           <h2 className='text-center pb-10 text-3xl font-bold'>Our Services</h2>
         </div>
-        <div className='grid grid-cols-3 gap-5'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
           {data.map((e, i) => {
             return (
               <ServiceCard name={e.name} description={e.description} width={e.width} key={i} />
