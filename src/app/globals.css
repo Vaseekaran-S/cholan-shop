@@ -42,3 +42,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

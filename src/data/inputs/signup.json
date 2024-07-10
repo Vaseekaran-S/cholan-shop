@@ -1,0 +1,23 @@
+
+[
+    {
+        "name": "name",
+        "type": "text",
+        "placeholder": "Enter email or mobile"
+    },
+    {
+        "name": "mobile",
+        "type": "number",
+        "placeholder": "Enter mobile"
+    },
+    {
+        "name": "email",
+        "type": "email",
+        "placeholder": "Enter email"
+    },
+    {
+        "name": "password",
+        "type": "password",
+        "placeholder": "Enter Password"
+    }
+]

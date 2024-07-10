@@ -1,0 +1,13 @@
+
+[
+    {
+        "name": "userId",
+        "type": "text",
+        "placeholder": "Enter email or mobile"
+    },
+    {
+        "name": "password",
+        "type": "password",
+        "placeholder": "Enter Password"
+    }
+]
